@@ -1,8 +1,8 @@
 import React from 'react';
-import CharacterCard from './CharacterCard';
+import Character from "./Character";
+import CardHeader from './CardHeader';
 
-const CharacterList = (props) => {
-    console.log(props);
+const CharacterCard = (props) => {
     // Try to think through what state you'll need for this app before starting. Then build out
     // the state properties here.
 
@@ -10,16 +10,17 @@ const CharacterList = (props) => {
     // side effect in a component, you want to think about which state and/or props it should
     // sync up with, if any.
    return (
-      <div className="App">
-        <h1 className="character-list">LIST BOX</h1>
-        {   
-          <CharacterCard key={props.index} name={props.name}/>
+      <div className="Character-card">
+        <h1 className="character-">"Name"{props.name}</h1>
+        
+   { } 
+          <CardHeader name={props.name} />? 
+          <Character />
     
-          }
+          
         
       </div>
     );
   }
   
-  export default CharacterList;
-  
+  export default CharacterCard;

@@ -32,9 +32,7 @@ const App = () => {
       {   
         
         (characters.map((person, index) => (
-          <CharacterList 
-          key={index}
-          name={person.name}
+          <CharacterList key={index} name={person.name}
           />
         )
   ))
