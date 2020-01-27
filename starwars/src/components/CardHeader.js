@@ -9,13 +9,10 @@ const CardHeader = (props) => {
     // sync up with, if any.
    return (
       <div className="Card-header">
-        <h1 className="header"> Holaaaa! Yo soy {props.user}</h1>
-        
-        { 
-          
-    
-          }
-        
+        <h2 className="header"> Name: {props.name}</h2>
+        <h3 className="info"> Gender: {props.gender}</h3>
+       
+       
       </div>
     );
   }

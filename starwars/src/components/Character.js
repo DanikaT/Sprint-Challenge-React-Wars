@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Character = (props) => {
+    console.log(props);
     // Try to think through what state you'll need for this app before starting. Then build out
     // the state properties here.
 
@@ -9,15 +10,11 @@ const Character = (props) => {
     // sync up with, if any.
    return (
       <div className="Character">
-        <h1 className="character"> Holaaaa!</h1>
-        
-        { 
-          
-    
-          }
+          <h2 className="ships"> Name: {props.name}</h2>
+        <h3 className="info"> Gender: {props.gender}</h3>
         
       </div>
     );
-  }
+   }
   
   export default Character;

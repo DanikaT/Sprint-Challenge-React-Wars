@@ -1,5 +1,5 @@
 import React from 'react';
-import Character from "./Character";
+import Starships from "./Starships";
 import CardHeader from './CardHeader';
 
 const CharacterCard = (props) => {
@@ -11,11 +11,11 @@ const CharacterCard = (props) => {
     // sync up with, if any.
    return (
       <div className="Character-card">
-        <h1 className="character-">"Name"{props.name}</h1>
+      
         
    { } 
-          <CardHeader name={props.name} />? 
-          <Character />
+          <CardHeader name={props.name} gender={props.gender} />
+         <Starships model={props.model} manufacturer={props.manufacturer}  />
     
           
         
