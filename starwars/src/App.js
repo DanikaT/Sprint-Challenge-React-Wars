@@ -50,8 +50,9 @@ useEffect(() => {
 
   return (
     <CharacterListDiv>
-      <h1 className="Header">React Wars</h1>
+     
       <section className="name-info">
+      <h1 className="Header">React Wars</h1>
       {   
         (characters.map((person, index) => (
           <CharacterList 
@@ -60,13 +61,8 @@ useEffect(() => {
           gender={person.gender}/>
         ))
         )
-
-        
-        }
-      </section>
-
-    <section>
-      {
+}
+{
       (ship.map((ships, index) => (
         <Starships 
          key={index}
@@ -76,16 +72,7 @@ useEffect(() => {
         />
     )))
   }
-      </section>
-     
-     
-       
-      }
-
-       
-
-        
-      
+      </section> 
     </CharacterListDiv>
   );
 }

@@ -3,7 +3,21 @@ import Starships from "./Starships";
 import CardHeader from './CardHeader';
 import styled from "styled-components";
 
+const CharacterCardHeader = styled.section`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+`;
 
+const CharacterCardStarships = styled.section`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: pink;
+`;
 
 
 const CharacterCard = (props) => {
@@ -17,12 +31,12 @@ const CharacterCard = (props) => {
       <div className="Character-card">
       
         
-   { } <section className="styled-header">
+   { } <CharacterCardHeader>
           <CardHeader name={props.name} gender={props.gender}  />
-          </section>
-          <section className="starships-info">
+          </CharacterCardHeader>
+          <CharacterCardStarships>
          <Starships model={props.model} manufacturer={props.manufacturer}  />
-         </section>
+         </CharacterCardStarships>
           
         
       </div>
