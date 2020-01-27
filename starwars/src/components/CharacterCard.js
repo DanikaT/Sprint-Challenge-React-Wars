@@ -1,6 +1,10 @@
 import React from 'react';
 import Starships from "./Starships";
 import CardHeader from './CardHeader';
+import styled from "styled-components";
+
+
+
 
 const CharacterCard = (props) => {
     // Try to think through what state you'll need for this app before starting. Then build out
@@ -13,10 +17,12 @@ const CharacterCard = (props) => {
       <div className="Character-card">
       
         
-   { } 
-          <CardHeader name={props.name} gender={props.gender} />
+   { } <section className="styled-header">
+          <CardHeader name={props.name} gender={props.gender}  />
+          </section>
+          <section className="starships-info">
          <Starships model={props.model} manufacturer={props.manufacturer}  />
-    
+         </section>
           
         
       </div>

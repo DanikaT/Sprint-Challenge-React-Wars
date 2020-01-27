@@ -3,7 +3,13 @@ import axios from "axios"
 import './App.css';
 import CharacterList from "./components/CharacterList";
 import Starships from "./components/Starships";
+import styled from "styled-components";
 
+const CharacterListDiv = styled.div`
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+`;
 
 
 const App = () => {
@@ -43,7 +49,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="App">
+    <CharacterListDiv>
       <h1 className="Header">React Wars</h1>
       <section className="name-info">
       {   
@@ -54,18 +60,22 @@ useEffect(() => {
           gender={person.gender}/>
         ))
         )
+
+        
         }
       </section>
 
     <section>
-      {ship.map((whip, index) => (
+      {
+      (ship.map((ships, index) => (
         <Starships 
          key={index}
 
-         model={whip.model}
-         manufacturer={whip.manufacturer}
+         model={ships.model}
+         manufacturer={ships.manufacturer}
         />
-    ))}
+    )))
+  }
       </section>
      
      
@@ -76,7 +86,7 @@ useEffect(() => {
 
         
       
-    </div>
+    </CharacterListDiv>
   );
 }
 
