@@ -15,12 +15,12 @@ console.log(props)
  
 
    return (
-      <div className="character-list-container">
+      <CharacterListDiv>
         <section className="character-list">
         <h1 className="character-list-div">STARWARS CREW MEMBER</h1>
-           <CharacterCard name={props.name} gender={props.gender} model={props.model} manufacturer={props.manufacturer} /> 
+           <CharacterCard name={props.name} gender={props.gender}  /> 
          </section>
-      </div>
+      </CharacterListDiv>
     );
   }
   

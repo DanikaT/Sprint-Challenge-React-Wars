@@ -1,5 +1,4 @@
 import React from 'react';
-import Starships from "./Starships";
 import CardHeader from './CardHeader';
 import styled from "styled-components";
 
@@ -11,13 +10,7 @@ align-items: center;
 background-color: white;
 `;
 
-const CharacterCardStarships = styled.section`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: pink;
-`;
+
 
 
 const CharacterCard = (props) => {
@@ -29,16 +22,10 @@ const CharacterCard = (props) => {
     // sync up with, if any.
    return (
       <div className="Character-card">
-      
-        
-   { } <CharacterCardHeader>
+         
+   <CharacterCardHeader>
           <CardHeader name={props.name} gender={props.gender}  />
           </CharacterCardHeader>
-          <CharacterCardStarships>
-         <Starships model={props.model} manufacturer={props.manufacturer}  />
-         </CharacterCardStarships>
-          
-        
       </div>
     );
   }
